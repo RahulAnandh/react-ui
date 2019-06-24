@@ -30,4 +30,4 @@ export default (state = [], payload) => {
                 return state = [...state, {login:true}]
         default: return state
     }
-}
+}   

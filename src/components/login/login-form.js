@@ -2,7 +2,7 @@ import LoginFormPresentation from './login-form-presentation';
 import React, { Component } from 'react';
 import {bindActionCreators} from 'redux';
 import { connect } from 'react-redux'
-import * as UserActions from '../actions/user-actions';
+import * as UserActions from '../../actions/user-actions';
 
 class LoginForm extends React.Component{
 componentWillMount(){

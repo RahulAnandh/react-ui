@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Form, Input, Select, Button, AutoComplete, Icon} from 'antd';
-import UploadImageMany from './upload-image-many'
+import UploadImageMany from '../image/upload-image-many'
 const { Option } = Select;
 const AutoCompleteOption = AutoComplete.Option;
 

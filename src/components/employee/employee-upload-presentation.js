@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Form, Input, Select, Button, AutoComplete, Icon,DatePicker} from 'antd';
-import UploadImage from './upload-image-one';
-import Data from '../data/data';
+import UploadImage from '../image/upload-image-one';
+import Data from '../../data/data';
 const { Option } = Select;
 const AutoCompleteOption = AutoComplete.Option;
 const children = [];

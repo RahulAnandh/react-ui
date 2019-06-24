@@ -3,7 +3,7 @@ import {Layout} from 'antd';
 import OrderListPresentation from './order-list-presentation';
 import {bindActionCreators} from 'redux';
 import { connect } from 'react-redux'
-import * as orderActions from '../actions/order-actions';
+import * as orderActions from '../../actions/order-actions';
 
 class OrderList extends Component {
   state = {

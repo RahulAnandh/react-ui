@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux'
-import * as EmployeeActions from '../actions/employee-actions';
+import * as EmployeeActions from '../../actions/employee-actions';
 import EmployeeUploadPresentation from './employee-upload-presentation';
 import EmployeeListPresentation from './employee-list-presentation';
-import { deleteEmployee } from '../actions/employee-actions';
+import { deleteEmployee } from '../../actions/employee-actions';
 
 class EmployeeUpload extends Component {
   constructor(props){

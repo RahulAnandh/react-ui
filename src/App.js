@@ -4,12 +4,13 @@ import './App.css';
 import { Layout, Menu, Row,Col,Modal, Icon } from 'antd';
 import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
 import { HashRouter as Router, Route } from 'react-router-dom'
-import ProductUpload from './components/product-upload';
-import EmployeeUpload from './components/employee-upload';
-import DashBoard from './components/dashboard';
-import OrderList from './components/order-list';
-import Login from './components/login-form';
+import ProductUpload from './components/product/product-upload';
+import EmployeeUpload from './components/employee/employee-upload';
+import DashBoard from './components/dashboard/dashboard';
+import OrderList from './components/order/order-list';
+import Login from './components/login/login-form';
 import image from './cataring.png';
+import User from './components/user/user';
 const {
   Header, Content, Footer, Sider,
 } = Layout;
@@ -69,6 +70,20 @@ class App extends Component {
                   <Icon type="user" />
                   <span>Employee Upload</span>
                 </Menu.Item>
+                <SubMenu
+            key="sub1"
+            title={
+              <span>
+                <Icon type="setting" />
+                <span>Settings</span>
+              </span>
+            }
+          >
+            <Menu.Item key="5" onClick={() => this.setState({ tabView: 'user' })}>User Settings</Menu.Item >
+            <Menu.Item key="6">Option 6</Menu.Item>
+            <Menu.Item key="7">Option 7</Menu.Item>
+            <Menu.Item key="8">Option 8</Menu.Item>
+          </SubMenu>
               </Menu>
             </Sider>
             <Layout>
@@ -91,6 +106,9 @@ class App extends Component {
                 }
                 {this.state.tabView === "employee" &&
                   <EmployeeUpload />
+                }
+                {this.state.tabView === "user" &&
+                  <User/>
                 }
 
               </Content>
